@@ -68,7 +68,7 @@ Drawer showMyMenu(context,List<int> indexes ,UserRepository _repository){
         break;
         case 6:
         tile = new ListTile(
-          title: Text('new member'),
+          title: Text('new LRC member'),
           onTap: () async {
             String? memberName = await showDialog<String>(
               context: context,
