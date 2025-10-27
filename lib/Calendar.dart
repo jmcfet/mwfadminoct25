@@ -61,7 +61,7 @@ class CustomCalendar{
   List<Calendar> getMonthCalendar(int month, int year, List<String> existingstatus,int defaultStatus, {StartWeekDay startWeekDay = StartWeekDay.sunday}){
 
     // validate
-    if(year == null || month == null || month < 1 || month > 12) throw ArgumentError('Invalid year or month');
+    if(month == null || month < 1 || month > 12) throw ArgumentError('Invalid year or month');
 
     List<Calendar> calendar = <Calendar>[];
 
@@ -163,7 +163,7 @@ class CustomCalendar{
   List<Calendar> getMonthCalendar1(int month, int day,int year, {StartWeekDay startWeekDay = StartWeekDay.sunday}){
 
     // validate
-    if(year == null || month == null || month < 1 || month > 12) throw ArgumentError('Invalid year or month');
+    if(month == null || month < 1 || month > 12) throw ArgumentError('Invalid year or month');
 
     List<Calendar> calendar = []  ;
 

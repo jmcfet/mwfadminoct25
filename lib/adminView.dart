@@ -653,7 +653,7 @@ pickeddate = await showDatePicker(
   }
   findMatch( List<MatchDTO> matchs,List<User> allusers,int day,PlayerData playerinfo,int columnNum){
 
-    List<MatchDTO> matchsforday = matchs!.where((element) =>
+    List<MatchDTO> matchsforday = matchs.where((element) =>
     element.day == day).toList();
     int iNumMatch = 0;
     bool bFound = false;

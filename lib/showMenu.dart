@@ -75,10 +75,10 @@ Drawer showMyMenu(context,List<int> indexes ,UserRepository _repository){
               builder: (BuildContext context) {
                 TextEditingController controller = TextEditingController();
                 return AlertDialog(
-                  title: Text('Enter Member Name'),
+                  title: Text('Enter Member EMail'),
                   content: TextField(
                     controller: controller,
-                    decoration: InputDecoration(hintText: "Member Name"),
+                    decoration: InputDecoration(hintText: "Member EMail"),
                   ),
                   actions: [
                     TextButton(

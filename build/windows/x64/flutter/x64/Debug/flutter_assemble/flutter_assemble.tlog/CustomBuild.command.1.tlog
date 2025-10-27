@@ -1,6 +1,6 @@
-^C:\FLUTTERPROJECTS\MWFADMINOCT25\BUILD\WINDOWS\X64\CMAKEFILES\8D563694A305390ADA05528A16505EBE\FLUTTER_WINDOWS.DLL.RULE
+^C:\FLUTTER\MYPROJECTS\MWFADMINOCT25\BUILD\WINDOWS\X64\CMAKEFILES\5DA13E6B9500D3F412A21A5D29B4AD82\FLUTTER_WINDOWS.DLL.RULE
 setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\src\flutter PROJECT_DIR=C:\flutterprojects\MWFAdminoct25 FLUTTER_ROOT=C:\src\flutter FLUTTER_EPHEMERAL_DIR=C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral PROJECT_DIR=C:\flutterprojects\MWFAdminoct25 FLUTTER_TARGET=C:\flutterprojects\MWFAdminoct25\lib\main.dart DART_DEFINES=RkxVVFRFUl9WRVJTSU9OPTMuMzUuMg==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049MDVkYjk2ODkwOA==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049YThiZmRmYzM5NA==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My45LjA= DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\flutterprojects\MWFAdminoct25\.dart_tool\package_config.json C:/src/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\jmcfe\flutter PROJECT_DIR=C:\flutter\myprojects\MWFAdminoct25 FLUTTER_ROOT=C:\Users\jmcfe\flutter FLUTTER_EPHEMERAL_DIR=C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral PROJECT_DIR=C:\flutter\myprojects\MWFAdminoct25 FLUTTER_TARGET=C:\flutter\myprojects\MWFAdminoct25\lib\main.dart DART_DEFINES=RkxVVFRFUl9WRVJTSU9OPTMuMzUuNw==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049YWRjOTAxMDYyNQ==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049MDM1MzE2NTY1YQ==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My45LjI= DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\flutter\myprojects\MWFAdminoct25\.dart_tool\package_config.json C:/Users/jmcfe/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -8,7 +8,7 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^C:\FLUTTERPROJECTS\MWFADMINOCT25\BUILD\WINDOWS\X64\CMAKEFILES\58D3075C0748E7EB044264F168BA6DB0\FLUTTER_ASSEMBLE.RULE
+^C:\FLUTTER\MYPROJECTS\MWFADMINOCT25\BUILD\WINDOWS\X64\CMAKEFILES\E37B30B2BB1DB263F8CD7230524D98A8\FLUTTER_ASSEMBLE.RULE
 setlocal
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -16,9 +16,9 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^C:\FLUTTERPROJECTS\MWFADMINOCT25\WINDOWS\FLUTTER\CMAKELISTS.TXT
+^C:\FLUTTER\MYPROJECTS\MWFADMINOCT25\WINDOWS\FLUTTER\CMAKELISTS.TXT
 setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/flutterprojects/MWFAdminoct25/windows -BC:/flutterprojects/MWFAdminoct25/build/windows/x64 --check-stamp-file C:/flutterprojects/MWFAdminoct25/build/windows/x64/flutter/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/flutter/myprojects/MWFAdminoct25/windows -BC:/flutter/myprojects/MWFAdminoct25/build/windows/x64 --check-stamp-file C:/flutter/myprojects/MWFAdminoct25/build/windows/x64/flutter/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

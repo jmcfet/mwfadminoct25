@@ -1,7 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 //https://flutter.dev/docs/development/data-and-backend/json#serializing-json-inside-model-classes
 //flutter  pub run build_runner build
-import 'package:json_annotation/json_annotation.dart';
 //https://flutter.dev/docs/development/data-and-backend/json#serializing-json-inside-model-classes
 //flutter  pub run build_runner build
 part 'User.g.dart';

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -18,9 +18,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{93599CB0-B10A-3593-AD74-45E0CAB05E5A}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{10F66E98-40D6-3CE9-B9CD-0AC94B80164E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>flutter_wrapper_app</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -29,17 +29,17 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -50,22 +50,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\flutterprojects\MWFAdminoct25\build\windows\x64\flutter\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\flutter\myprojects\MWFAdminoct25\build\windows\x64\flutter\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">flutter_wrapper_app.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">flutter_wrapper_app</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\flutterprojects\MWFAdminoct25\build\windows\x64\flutter\Profile\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\flutter\myprojects\MWFAdminoct25\build\windows\x64\flutter\Profile\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">flutter_wrapper_app.dir\Profile\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">flutter_wrapper_app</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\flutterprojects\MWFAdminoct25\build\windows\x64\flutter\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\flutter\myprojects\MWFAdminoct25\build\windows\x64\flutter\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">flutter_wrapper_app.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">flutter_wrapper_app</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -73,22 +73,25 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
       <TreatWarningAsError>true</TreatWarningAsError>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;_DEBUG;UNICODE;_UNICODE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;_DEBUG;UNICODE;_UNICODE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -101,30 +104,34 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DisableSpecificWarnings>"4100"</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
       <TreatWarningAsError>true</TreatWarningAsError>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;UNICODE;_UNICODE;CMAKE_INTDIR="Profile";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;UNICODE;_UNICODE;CMAKE_INTDIR="Profile"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;UNICODE;_UNICODE;CMAKE_INTDIR=\"Profile\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;UNICODE;_UNICODE;CMAKE_INTDIR=\"Profile\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -137,30 +144,34 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DisableSpecificWarnings>"4100"</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
       <TreatWarningAsError>true</TreatWarningAsError>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;UNICODE;_UNICODE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;UNICODE;_UNICODE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -172,11 +183,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\flutterprojects\MWFAdminoct25\windows\flutter\CMakeLists.txt">
-      <StdOutEncoding>UTF-8</StdOutEncoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/flutterprojects/MWFAdminoct25/windows/flutter/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\flutter\myprojects\MWFAdminoct25\windows\flutter\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/flutter/myprojects/MWFAdminoct25/windows/flutter/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/flutterprojects/MWFAdminoct25/windows -BC:/flutterprojects/MWFAdminoct25/build/windows/x64 --check-stamp-file C:/flutterprojects/MWFAdminoct25/build/windows/x64/flutter/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/flutter/myprojects/MWFAdminoct25/windows -BC:/flutter/myprojects/MWFAdminoct25/build/windows/x64 --check-stamp-file C:/flutter/myprojects/MWFAdminoct25/build/windows/x64/flutter/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -184,12 +195,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\flutterprojects\MWFAdminoct25\build\windows\x64\flutter\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\flutter\myprojects\MWFAdminoct25\build\windows\x64\flutter\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/flutterprojects/MWFAdminoct25/windows/flutter/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/flutter/myprojects/MWFAdminoct25/windows/flutter/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/flutterprojects/MWFAdminoct25/windows -BC:/flutterprojects/MWFAdminoct25/build/windows/x64 --check-stamp-file C:/flutterprojects/MWFAdminoct25/build/windows/x64/flutter/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/flutter/myprojects/MWFAdminoct25/windows -BC:/flutter/myprojects/MWFAdminoct25/build/windows/x64 --check-stamp-file C:/flutter/myprojects/MWFAdminoct25/build/windows/x64/flutter/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -197,12 +208,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\flutterprojects\MWFAdminoct25\build\windows\x64\flutter\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\flutter\myprojects\MWFAdminoct25\build\windows\x64\flutter\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/flutterprojects/MWFAdminoct25/windows/flutter/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/flutter/myprojects/MWFAdminoct25/windows/flutter/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/flutterprojects/MWFAdminoct25/windows -BC:/flutterprojects/MWFAdminoct25/build/windows/x64 --check-stamp-file C:/flutterprojects/MWFAdminoct25/build/windows/x64/flutter/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/flutter/myprojects/MWFAdminoct25/windows -BC:/flutter/myprojects/MWFAdminoct25/build/windows/x64 --check-stamp-file C:/flutter/myprojects/MWFAdminoct25/build/windows/x64/flutter/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -210,26 +221,27 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\flutterprojects\MWFAdminoct25\build\windows\x64\flutter\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\flutter\myprojects\MWFAdminoct25\build\windows\x64\flutter\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc" />
-    <ClCompile Include="C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc" />
-    <ClCompile Include="C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc" />
-    <ClCompile Include="C:\flutterprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc" />
+    <ClCompile Include="C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc" />
+    <ClCompile Include="C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc" />
+    <ClCompile Include="C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc" />
+    <ClCompile Include="C:\flutter\myprojects\MWFAdminoct25\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\flutterprojects\MWFAdminoct25\build\windows\x64\ZERO_CHECK.vcxproj">
-      <Project>{474D54A4-31F9-3CEF-9137-C05301E83259}</Project>
+    <ProjectReference Include="C:\flutter\myprojects\MWFAdminoct25\build\windows\x64\ZERO_CHECK.vcxproj">
+      <Project>{41205E4A-5B9E-30E9-9C97-EF2AAC22B6D5}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\flutterprojects\MWFAdminoct25\build\windows\x64\flutter\flutter_assemble.vcxproj">
-      <Project>{36960912-C0B0-32B7-89BE-FFE6A8B54010}</Project>
+    <ProjectReference Include="C:\flutter\myprojects\MWFAdminoct25\build\windows\x64\flutter\flutter_assemble.vcxproj">
+      <Project>{7305A47C-B53D-3241-9C4E-E71AB921A99D}</Project>
       <Name>flutter_assemble</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
