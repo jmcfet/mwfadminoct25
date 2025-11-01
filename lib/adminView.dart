@@ -3,6 +3,7 @@ import 'package:adminui/models/BookedDatesResponse.dart';
 import 'package:adminui/models/playerdata.dart';
 import 'package:adminui/showMenu.dart';
 import 'models/MatchDTO1.dart';
+import 'package:adminui/matchgrid.dart';
 
 //import 'package:adminui/models/playerinfo.dart';
 import 'package:flutter/material.dart';
@@ -11,9 +12,8 @@ import 'package:adminui/models/UsersResponse.dart';
 import 'package:adminui/models/User.dart';
 import 'package:adminui/models/Match.dart';
 import 'package:adminui/models/PlayersinfoandBookedDate.dart';
-import 'package:adminui/models/playerinfo.dart';
 import 'package:adminui/Calendar.dart';
-import 'dart:convert';
+
 
 //at end of the year look for hardcoded date
 
@@ -90,23 +90,24 @@ var tracknumbermatches = Map<String, int>();
                   style: ElevatedButton.styleFrom(backgroundColor: Colors.redAccent),
                   child: Text("showGridforMonth",
                       style: TextStyle(fontSize: 20, color: Colors.white)),
-                  onPressed: showGridforMonth),
+                  onPressed: () => showGridforMonth()
+                  ),
               
               ElevatedButton(
                   style: ElevatedButton.styleFrom(backgroundColor: Colors.redAccent),
                   child: Text("Start",
                       style: TextStyle(fontSize: 20, color: Colors.white)),
-                  onPressed: startBtnswitchState ? () => {newMonth()} : null),
+                  onPressed: startBtnswitchState ? () => newMonth() : null),
 
                   
                  
               IconButton(
                   icon: Icon(Icons.save),
-                  onPressed: saveBtnswitchState ? () => {save()} : null
+                  onPressed: saveBtnswitchState ? () => save() : null
               ),
                IconButton(
                   icon: Icon(Icons.adobe),
-                  onPressed: saveBtnswitchState ? () => {showGridforMonth()} : null),   
+                  onPressed: saveBtnswitchState ? () => showGridforMonth() : null),   
             ]),
         drawer: showMyMenu(context, [1, 2, 3, 4, 5,6], _repository),
         body: SingleChildScrollView(
@@ -353,6 +354,13 @@ var tracknumbermatches = Map<String, int>();
       _showDialog('that all Folks', false);
      
     
+      getUsersandInitGrid(pickeddate!,_repository).whenComplete(() =>
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(  // transitions to the new route using a platform-specific animation.
+                                    builder: (context) => UserMatchsDataGrid2(playersinfoin: playersinfo, allPlayersin: allPlayers, monthin: pickeddate!.month, columnsin: columns,columnwidthsin: columnswidths,)
+                                  )
+                              ));
       
                      
       return;
@@ -380,7 +388,7 @@ pickeddate = await showDatePicker(
     //find the first MWF of selected  month
 
    
-   // bookingsresp = await _repository.getMonthStatus(pickeddate!);
+    bookingsresp = await _repository.getMonthStatus(pickeddate!);
     
 
  }
