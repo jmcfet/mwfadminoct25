@@ -333,10 +333,13 @@ var tracknumbermatches = Map<String, int>();
       m.level = 99;
       m.players = players;
       matches.add(m);
+      
     }
     
     for (var match in matches)
     {
+      if (match.level == 99)    //skip unmatched
+        continue;
       for(var player in match.players!)
               {
                 if (tracknumbermatches[player] == null)

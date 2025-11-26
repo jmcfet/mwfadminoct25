@@ -34,7 +34,7 @@ Future<MatchsDTOResponse>  getAllMatchs(DateTime date) async {
 
     return _apiProvider.zeroCaptainCount();
   }
-  Future<Future<UsersResponse>> changeuser(User user) async{
+  Future<UsersResponse> changeuser(User user) async{
 
     return _apiProvider.changeuser(user);
   }
